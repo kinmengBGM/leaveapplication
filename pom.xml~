@@ -89,44 +89,5 @@
 
 
 	</dependencies>
-  	<build>
-<plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-plugin</artifactId>
-        <version>1.9</version>
-        <configuration>
-          <connectionType>developerConnection</connectionType>
-        </configuration>
-      </plugin>
-      <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>2.5</version>
-        </plugin>
-	<plugin>
-		<artifactId>maven-compiler-plugin</artifactId>
-		<version>3.0</version>
-		<configuration>
-			<source>1.6</source>
-			<target>1.6</target>
-		</configuration>
-	</plugin>
-    </plugins>
-    
-  </build>
-
-<distributionManagement>
-  <repository>
-     <id>beans-releases</id>
-     <name>Internal Releases</name>
-     <url>http://beans-my.dyndns.biz:8081/nexus/content/repositories/beans_releases/</url>
-  </repository>
-  <snapshotRepository>
-     <id>beans-releases</id>
-     <name>Internal Releases</name>
-     <url>http://beans-my.dyndns.biz:8081/nexus/content/repositories/beans_snapshots/</url>
-  </snapshotRepository>
-</distributionManagement>
-
+  
 </project>
